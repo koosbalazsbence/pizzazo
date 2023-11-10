@@ -10,7 +10,7 @@
 </head>
 <body style="background-color: lightyellow;">
     <div>
-        <ul class="nav justify-content-center bg-warning">
+        <ul class="nav justify-content-center bg-warning" style="height: 50px; font-size: 20px;">
             <li class="nav-item">
               <a class="nav-link active text-white" href="index.html">Főoldal</a>
             </li>
@@ -25,37 +25,41 @@
             </li>
         </ul>
     </div>
-        <h1>Mario Pizza</h1>
-        <h2>Ahol az étel mellett játszani is lehet</h2>
+    <div class="p-5 text-center bg-image" style="background-image: url('images/pizza_main.jpg'); height: 450px; background-repeat: no-repeat;">
+        <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="container-fluid">
+                <h1 style="font-size: 10rem;" class="display-4">Mario Pizza</h1>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2 class="display-4 text-white" style="background-color: lightgrey; height: 75px;"><i>Ahol az étel mellett játszani is lehet</i></h2>
+    </div>
         <div class="container">
-            <div class="row">
-                <div class="col">
-                        <div class="card-deck">
-                            <div class="card">
-                              <img src="images/pizza1.jpg" class="card-img-top" alt="Pizza 1">
-                              <div class="card-body">
-                                <a href="pizzafajtak.html" class="text-dark" style="text-decoration: none;">
-                                    <h5 class="card-title"><b>Pizzafajták</b></h5>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="card">
-                              <img src="images/canolli.jpg" class="card-img-top" alt="Cannoli">
-                              <div class="card-body">
-                                <a href="sutemenyek.html" class="text-dark" style="text-decoration: none;">
-                                    <h5 class="card-title"><b>Sütemények</b></h5>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="card">
-                              <img src="images/limonade.jpg" class="card-img-top" alt="Limonádé">
-                              <div class="card-body">
-                                <a href="frissitok.html" class="text-dark" style="text-decoration: none;">
-                                    <h5 class="card-title"><b>Frissítők</b></h5>
-                                </a>
-                              </div>
-                            </div>
+            <div class="row row-cols-1 row-cols-md-3">
+                <div class="col mb-4">
+                    <div class="card border-danger mb-4">
+                        <img src="images/pizza0.jpg" class="card-img-top" alt="Pizzafajták">
+                        <div class="card-body">
+                            <a href="pizzafajtak.html" class="btn btn-block"><h5 class="card-title">Pizzafajták</h5></a>
                         </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card border-success mb-4">
+                        <img src="images/limonade.jpg" class="card-img-top" alt="Sütemények">
+                        <div class="card-body">
+                            <a href="sutemenyek.html" class="btn btn-block"><h5 class="card-title">Sütemények</h5></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card border-warning mb-4">
+                        <img src="images/canolli.jpg" class="card-img-top" alt="Frissítők">
+                        <div class="card-body">
+                            <a href="frissitok.html" class="btn btn-block"><h5 class="card-title">Frissitők</h5></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

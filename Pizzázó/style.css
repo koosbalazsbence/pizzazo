@@ -13,6 +13,11 @@ td{
     text-align: center;
 }
 
-img{
-    max-width: 200px;
+h1{
+    color: white;
+    text-decoration: underline;
+}
+
+h5{
+    text-transform: uppercase;
 }
