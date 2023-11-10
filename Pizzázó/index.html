@@ -3,74 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
     <title>Mario Pizza</title>
 </head>
-<body style="background-color: lightyellow; color: red;">
+<body style="background-color: lightyellow;">
     <div>
-        <h1 style="text-align: center;">Mario Pizza</h1>
-        <h2 style="text-align: center;">Ahol az étel mellett játszani is lehet</h2>
-        <table style="margin: auto; border: 5px solid black; border-collapse: collapse;" cellspacing="2">
-            <caption></caption>
-            <tr>
-                <td><img width="200px" src="pizza1.jpg" alt="Pizza 1"></td>
-                <td><img width="200px" src="canolli.jpg" alt="Cannoli"></td>
-                <td><img width="200px" src="limonade.jpg" alt="Limonádé"></td>
-            </tr>
-            <tr>
-                <td style="text-align: center;"><b>Pizzafajták</b></td>
-                <td style="text-align: center;"><b>Sütemények</b></td>
-                <td style="text-align: center;"><b>Frissítők</b></td>
-            </tr>
-        </table>
+        <ul class="nav justify-content-center bg-warning">
+            <li class="nav-item">
+              <a class="nav-link active text-white" href="index.html">Főoldal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-muted" href="pizzafajtak.html">Pizzafajták</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-muted" href="sutemenyek.html">Sütemények (fejlesztés alatt)</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-muted" href="frissitok.html">Frissítők</a>
+            </li>
+        </ul>
+    </div>
+        <h1>Mario Pizza</h1>
+        <h2>Ahol az étel mellett játszani is lehet</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                        <div class="card-deck">
+                            <div class="card">
+                              <img src="images/pizza1.jpg" class="card-img-top" alt="Pizza 1">
+                              <div class="card-body">
+                                <a href="pizzafajtak.html" class="text-dark" style="text-decoration: none;">
+                                    <h5 class="card-title"><b>Pizzafajták</b></h5>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <img src="images/canolli.jpg" class="card-img-top" alt="Cannoli">
+                              <div class="card-body">
+                                <a href="sutemenyek.html" class="text-dark" style="text-decoration: none;">
+                                    <h5 class="card-title"><b>Sütemények</b></h5>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <img src="images/limonade.jpg" class="card-img-top" alt="Limonádé">
+                              <div class="card-body">
+                                <a href="frissitok.html" class="text-dark" style="text-decoration: none;">
+                                    <h5 class="card-title"><b>Frissítők</b></h5>
+                                </a>
+                              </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
         <h3 style="text-align: center;">Játékaink</h3>
-        <table style="margin: auto; border: 5px solid black; border-collapse: collapse;" cellspacing="2">
+        <table cellspacing="2">
             <caption></caption>
             <tr>
-                <td><img width="250px" src="retro_konzol.jpg" alt="Retro konzol"></td>
-                <td><img width="250px" src="reto_játék.jpg" alt="Retro játék"></td>
-                <td><img width="250px" src="nintendo_uj.jpg" alt="Új Nintendo"></td>
-                <td><img width="250px" src="uj_jatekok.png" alt="Új játékok"></td>
+                <td><img width="250px" src="images/retro_konzol.jpg" alt="Retro konzol"></td>
+                <td><img width="250px" src="images/reto_játék.jpg" alt="Retro játék"></td>
+                <td><img width="250px" src="images/nintendo_uj.jpg" alt="Új Nintendo"></td>
+                <td><img width="250px" src="images/uj_jatekok.png" alt="Új játékok"></td>
             </tr>
             <tr>
-                <td style="text-align: center;">Retró konzolunk:</td>
-                <td style="text-align: center;">Retró játékaink:</td>
-                <td style="text-align: center;">Modern konzolunk:</td>
-                <td style="text-align: center;">Játékaink:</td>
+                <td>Retró konzolunk:</td>
+                <td>Retró játékaink:</td>
+                <td>Modern konzolunk:</td>
+                <td>Játékaink:</td>
             </tr>
         </table>
-        <h2>Pizzák</h2>
-        <ul>
-            <li>Super Mario Margherita</li>
-            <li>Princess Mushroom Veggie</li>
-            <li>Koopa Troopa Hawaiian</li>
-            <li>Bowser BBQ Bacon Blast</li>
-            <li>Toadstool Tomato & Olive Overload</li>
-            <li>Wario Garlic Supreme</li>
-            <li>Yoshi Eggplant Extravaganza</li> 
-            <li>Fire Flower Fiery Chicken Fiesta</li>
-            <li>Star Power Spinach and Feta Surprise</li>
-            <li>Bob-omb BBQ Pineapple Explosion</li>
-            <li>Power-Up Pesto and Sun-dried Tomato Delight</li>
-        </ul>
-        <h2>Üdítők</h2>
-        <ul id="frissito">
-            <li>Super Star Sodák (Választható: Cola, Narancs, vagy Gomba íz)</li>
-            <li>Princess Peach Passionfruit Fizz </li>
-            <li>Koopa Ko-Kola</li>
-            <li>Goomba Grape Gusto</li>
-            <li>Bullet Bill Berry Blast</li>
-            <li>Shell Shocked Citrus Splash</li>
-            <li>Mushroom Mint Lemonade</li>
-        </ul>
-            <li>Goomba Chocolate Cannoli</li>
-            <li>Princess Peach Cobbler Cup</li>
-            <li>Yoshi's Lime Sorbet Surprise</li>
-            <li>Koopa Troopa Turtle Brownie Delight</li>
-            <li>Starman Vanilla Panna Cotta</li>
-        <hr>
-        <p>Írjon nekünk: <a href="mailto:mario@nintendo.com">mario@nintendo.com</a></p>
-        <p>Pizzarendelés: +36-1-222-22-22</p>
-        <p>Játékfoglalás: a fenti elérhetőségeken</p>
+            <hr>
+            <p>Írjon nekünk: <a href="mailto:mario@nintendo.com">mario@nintendo.com</a></p>
+            <p>Pizzarendelés: +36-1-222-22-22</p>
+            <p>Játékfoglalás: a fenti elérhetőségeken</p>
         <br>
     </div>
 </body>
